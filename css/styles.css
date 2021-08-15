@@ -1,0 +1,157 @@
+  .attribution {
+
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 0.65rem;
+    padding:0;
+    position: absolute;
+    bottom: .6rem;
+    right:50%;
+    transform: translate(50%,0);
+
+    letter-spacing: 2px;
+
+}
+  .attribution a { color: hsl(228, 45%, 44%); }
+
+  html{
+    height: 100%;
+  }
+  body{
+
+    text-align: center;
+    height: 100%;
+    margin: 0;
+  }
+  h1{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+  }
+  p{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+  }
+
+.main-container{
+  background-color: hsl(225, 100%, 94%);
+  margin: 0;
+  height:100%;
+  overflow: hidden;
+  position: relative;
+}
+.background-pic{
+  position: relative;
+  width:100%;
+  bottom: 6rem;
+
+}
+
+.main-box{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+background-color: white;
+border-radius: 1rem;
+box-shadow:0 10px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.music-pic{
+  border-top-left-radius:1rem;
+  border-top-right-radius: 1rem;
+}
+.second-main-box{
+  width: 450px;
+}
+.price-box{
+  background-color:hsl(225, 100%, 98%);
+  border-radius: 1rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  padding: .7rem .7rem .8rem;
+
+  display: grid;
+  grid-template-columns: 3rem auto auto;
+  grid-column-gap: 20px;
+
+}
+.price-box h1{
+    font-size: 1rem;
+}
+
+.change{
+  color:hsl(245, 75%, 52%);
+  text-decoration:underline;
+  grid-row: 1 / 3;
+  grid-column:3/4;
+  padding-top: .7rem;
+}
+.change:hover{
+  color: hsl(245, 75%, 70%);
+  text-decoration:none;
+}
+
+.proceed{
+  margin-top: 2rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  height: 2.7rem;
+  background-color: hsl(245, 75%, 52%);
+  border-radius: .5rem;
+  box-shadow:0 14px 8px 1px rgba(0, 0, 0, 0.1);
+}
+.proceed:hover{
+  background-color: hsl(245, 75%, 70%);
+}
+.proceed p{
+  position: relative;
+  top: 30%;
+  font-weight: 700;
+  color: white;
+  font-size: 85%;
+}
+.cancel{
+  margin: 2rem;
+}
+.cancel p{
+  font-weight: 700;
+}
+.cancel p:hover{
+  color: hsl(223, 47%, 23%);
+}
+@media screen and (max-width: 375px){
+
+    .music-pic{
+      width:300px;
+    }
+    .second-main-box{
+      width: 300px;
+    }
+    h1{
+      font-size: 3vh;
+      margin: 1.5rem;
+    }
+    p{
+      font-size: 2.1vh;
+    }
+    .proceed{
+      margin-top: 1rem;
+      margin-left: 1.6rem;
+      margin-right: 1.6rem;
+      height: 2.7rem;
+      background-color: hsl(245, 75%, 52%);
+      border-radius: .5rem;
+      box-shadow:0 14px 8px 1px rgba(0, 0, 0, 0.1);
+    }
+
+    .price-box{
+      margin: 2rem 1rem;
+    }
+    .price-box h1{
+        font-size: 2.4vh;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+}
